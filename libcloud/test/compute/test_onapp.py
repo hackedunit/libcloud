@@ -103,7 +103,6 @@ class OnAppMockHttp(MockHttpTestCase):
     def _templates_json(self, method, url, body, headers):
         body = self.fixtures.load('list_images.json')
         return (httplib.OK, body, {}, httplib.responses[httplib.OK])
-    
 
 
 if __name__ == '__main__':

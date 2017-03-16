@@ -314,7 +314,7 @@ class OnAppNodeDriver(NodeDriver):
         for vm in response.object:
             nodes.append(self._to_node(vm["virtual_machine"]))
         return nodes
-    
+
     def list_images(self):
         """
         List all images
@@ -331,19 +331,20 @@ class OnAppNodeDriver(NodeDriver):
     #
     # Helper methods
     #
-    
+
     def _to_image(self, template):
         extra = {'distribution': template['operating_system_distro'],
                  'operating_system': template['operating_system'],
                  'operating_system_arch': template['operating_system_arch'],
-                 'allow_resize_without_reboot': template['allow_resize_without_reboot'],
+                 'allow_resize_without_reboot':
+                 template['allow_resize_without_reboot'],
                  'allowed_hot_migrate': template['allowed_hot_migrate'],
                  'allowed_swap': template['allowed_swap'],
                  'min_disk_size': template['min_disk_size'],
                  'min_memory_size': template['min_memory_size'],
                  'created_at': template['created_at']}
-        return NodeImage(id=template['id'], name=template['label'], driver=self,
-                         extra=extra)
+        return NodeImage(id=template['id'], name=template['label'],
+                         driver=self, extra=extra)
 
     def _to_node(self, data):
         identifier = data["identifier"]
