@@ -1,8 +1,8 @@
 OnApp DNS Driver Documentation
 =================================
 
-OnApp Cloud integrates its fully redundant DNS network into the OnApp Control
-Panel, so you can manage DNS for your own domains, and your customers’
+`OnApp`_ Cloud integrates its fully redundant DNS network into the OnApp
+Control Panel, so you can manage DNS for your own domains, and your customers’
 domains. Its Anycast DNS service is hosted at datacenters around the world,
 and it’s free of charge for customers running the full version of OnApp Cloud,
 with CDN enabled. Get fast, fully redundant DNS for free!
