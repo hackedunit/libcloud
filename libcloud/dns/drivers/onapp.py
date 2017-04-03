@@ -33,7 +33,7 @@ DEFAULT_ZONE_TTL = 1200
 class OnAppDNSDriver(DNSDriver):
     type = Provider.ONAPP
     name = 'OnApp'
-    website = 'https://onapp.com/'
+    website = 'http://onapp.com/'
     connectionCls = OnAppConnection
 
     RECORD_TYPE_MAP = {

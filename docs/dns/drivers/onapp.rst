@@ -20,4 +20,4 @@ API Docs
     :members:
     :inherited-members:
 
-.. _`OnApp`: https://onapp.com/
+.. _`OnApp`: http://onapp.com/
